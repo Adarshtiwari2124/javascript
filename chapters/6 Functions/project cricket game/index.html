@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style> 
+  body{
+    text-align: center;
+  }
+    </style>
+  <title>  Cricket Game</title>
+</head>
+<body>
+
+  <h1> BAT BALL STUMP GAME </h1>
+  <button onclick="
+   let computerChoice = generateComputerChoice();
+    let resultMsg;
+    if(computerChoice === 'ball'){
+      resultMsg='User win. ';
+    }else if(computerChoice === 'bat') {
+      resultMsg=`it's a tie. `;
+    }else if(computerChoice === 'Stump') {
+      resultMsg='computer has won.';
+
+    }
+    alert(`you have chosen a bat. computer choice is ${computerChoice} and ${resultMsg}`); ">Bat</button>
+
+  <button onclick="
+   let computerChoice = generateComputerChoice();
+   let resultMsg;
+   if(computerChoice === 'ball'){
+     resultMsg= ` it's a tie. `;
+   }else if(computerChoice === 'bat') {
+     resultMsg= 'computer has won.';
+   }else if(computerChoice === 'Stump'){
+     resultMsg= 'User win. ';
+   }
+  alert(`you have chosen a ball. computer choice is ${computerChoice} and ${resultMsg}`); " > Ball </button>
+
+  <button onclick="
+    let computerChoice = generateComputerChoice();
+    let resultMsg;
+      if(computerChoice === 'ball'){
+        resultMsg= 'computer has won.';
+      }else if(computerChoice === 'bat') {
+        resultMsg= 'User win. ';
+      }else if(computerChoice === 'Stump'){
+        resultMsg= ` it's a tie. `;
+      }
+      alert(`you have chosen a Stump. computer choice is ${computerChoice} and ${resultMsg}`); " >Stump</button>
+
+
+      <script>
+      
+      function generateComputerChoice(){
+        let randomNumber = Math.random() * 3;
+         
+        if(randomNumber>0 && randomNumber <= 1){
+        return 'bat';
+    
+        }else if(randomNumber>1 && randomNumber<=2){
+         return 'ball';
+      
+
+        }else {
+          return 'Stump';
+        }
+
+      }
+  </script>
+</body>
+</html>

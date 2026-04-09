@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      let age = 63;
+      let gender = 'male';
+      let finale_Discount;
+      if(age<=5){
+        finale_Discount = 100;
+      } else if( gender === 'female' || age <=18){
+        finale_Discount =50;
+      }else if(age>=65){
+        finale_Discount = 30;
+      }else{
+        finale_Discount=0;
+      }
+
+      console.log(`your finale discount is ${finale_Discount}`);
+    </script>
+</body>
+</html>
