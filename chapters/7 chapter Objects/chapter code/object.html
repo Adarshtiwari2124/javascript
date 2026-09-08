@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Object</title>
+</head>
+<body>
+  <script>
+    let product={
+      company: 'mango',
+      price:860,
+      'items-name': 'T-shirt',
+    }
+   
+    console.log(product);
+    console.log(product.company);
+    console.log(product.price);
+    console.log(product.items_name);
+    product.company = 'banana';
+    console.log(product);
+
+    let propertyname = 'items-name';
+    console.log(product['company']);
+    console.log(product['items-name']);
+     
+    delete product.company
+    console.log(product);
+  </script>
+</body>
+</html>
